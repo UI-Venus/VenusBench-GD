@@ -455,7 +455,9 @@
             <!-- Left Column -->
             <div class="column is-half">
               <div class="result-item">
-                <img src="static/images/radar_chart.png" alt="Radar Chart" loading="lazy" />
+                <div class="result-item-img-container">
+                  <img src="static/images/radar_chart.png" alt="Radar Chart" loading="lazy" />
+                </div>
                 <p>
                   The performance of <strong>representative models</strong> on advanced grounding tasks are significantly lower than on basic tasks, highlighting the increased difficulty and reasoning demands.
                 </p>
@@ -465,7 +467,9 @@
             <!-- Right Column -->
             <div class="column is-half">
               <div class="result-item">
-                <img src="static/images/human_performance.png" alt="Human Performance" loading="lazy" />
+                <div class="result-item-img-container">
+                  <img src="static/images/human_performance.png" alt="Human Performance" loading="lazy" />
+                </div>
                 <p>
                   <strong>Humane Performance</strong> vs. state-of-the-art (SOTA) on grounding tasks. A significant performance gap persists, particularly in advanced grounding scenarios.
                 </p>
@@ -499,25 +503,29 @@
         <div class="container is-max-desktop">
           <h2 class="title is-3">Dataset Visualization</h2>
           <div class="columns is-multiline">
-            <!-- First Row -->
-            <div class="column is-full">
-              <div class="result-item">
-                <img src="static/images/ann_vis.png" alt="Baisc Grounding Visualization" loading="lazy" />
-                <p>
-                  <strong>Examples of basic grounding tasks</strong>, illustrating both correct and incorrect matches between generated instructions and their corresponding annotated bounding boxes.
-                </p>
-              </div>
-            </div>
-            
-            <!-- Second Row -->
-            <div class="column is-full">
-              <div class="result-item">
-                <img src="static/images/advanced_ann_vis.png" alt="Advanced Grounding Visualization" loading="lazy" />
-                <p>
-                  <strong>Examples of advanced grounding tasks</strong>. In the refusal grounding task, the red bounding box indicates the original UI element. After modification of the instruction, no matching element exists in the image.
-                </p>
-              </div>
-            </div>
+             <!-- First Row -->
+             <div class="column is-full">
+               <div class="result-item">
+                 <div class="result-item-img-container">
+                   <img src="static/images/ann_vis.png" alt="Baisc Grounding Visualization" loading="lazy" />
+                 </div>
+                 <p>
+                   <strong>Examples of basic grounding tasks</strong>, illustrating both correct and incorrect matches between generated instructions and their corresponding annotated bounding boxes.
+                 </p>
+               </div>
+             </div>
+             
+             <!-- Second Row -->
+             <div class="column is-full">
+               <div class="result-item">
+                 <div class="result-item-img-container">
+                   <img src="static/images/advanced_ann_vis.png" alt="Advanced Grounding Visualization" loading="lazy" />
+                 </div>
+                 <p>
+                   <strong>Examples of advanced grounding tasks</strong>. In the refusal grounding task, the red bounding box indicates the original UI element. After modification of the instruction, no matching element exists in the image.
+                 </p>
+               </div>
+             </div>
             
           </div>
         </div>
